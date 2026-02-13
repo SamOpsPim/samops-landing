@@ -7,89 +7,203 @@ import { LogoIcon } from "@/components/logo";
 /* ── Icon components ── */
 function IconAnomalyDetection() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"
+      />
     </svg>
   );
 }
 
 function IconRecommendation() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+      />
     </svg>
   );
 }
 
 function IconCodeAgent() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"
+      />
     </svg>
   );
 }
 
 function IconDashboard() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6"
+      />
     </svg>
   );
 }
 
 function IconTicket() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v3.026a2.999 2.999 0 010 5.198v3.026c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125v-3.026a2.999 2.999 0 010-5.198V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"
+      />
     </svg>
   );
 }
 
 function IconNotification() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+      />
     </svg>
   );
 }
 
 function IconShield() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+      />
     </svg>
   );
 }
 
 function IconCloud() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15Z"
+      />
     </svg>
   );
 }
 
 function IconChart() {
   return (
-    <svg className="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6Z" />
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5Z" />
+    <svg
+      className="w-7 h-7"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6Z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5Z"
+      />
     </svg>
   );
 }
 
 function IconArrowRight() {
   return (
-    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+    <svg
+      className="w-4 h-4"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+      />
     </svg>
   );
 }
 
 function IconCheck() {
   return (
-    <svg className="w-5 h-5 text-[#d46a3a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+    <svg
+      className="w-5 h-5 text-[#d46a3a]"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M4.5 12.75l6 6 9-13.5"
+      />
     </svg>
   );
 }
@@ -99,32 +213,38 @@ const features = [
   {
     icon: <IconAnomalyDetection />,
     title: "Anomaly Detection",
-    description: "ML-powered detection of spend spikes, budget drifts, and structural cost changes — scored with business context and statistical confidence.",
+    description:
+      "ML-powered detection of spend spikes, budget drifts, and structural cost changes — scored with business context and statistical confidence.",
   },
   {
     icon: <IconRecommendation />,
     title: "Smart Recommendations",
-    description: "Compute rightsizing, scheduling, storage tiering, commitment planning, and network optimization — each with a concrete savings estimate.",
+    description:
+      "Compute rightsizing, scheduling, storage tiering, commitment planning, and network optimization — each with a concrete savings estimate.",
   },
   {
     icon: <IconCodeAgent />,
     title: "AI Code Analysis Agent",
-    description: "An LLM agent that correlates cost anomalies to source code, identifies wasteful patterns (N+1 queries, polling loops), and opens a fix PR automatically.",
+    description:
+      "An LLM agent that correlates cost anomalies to source code, identifies wasteful patterns (N+1 queries, polling loops), and opens a fix PR automatically.",
   },
   {
     icon: <IconDashboard />,
     title: "Unified Dashboard",
-    description: "Web and mobile dashboards to explore costs by service, tag, project, or region — with drill-down, comparison, and time-series views.",
+    description:
+      "Web and mobile dashboards to explore costs by service, tag, project, or region — with drill-down, comparison, and time-series views.",
   },
   {
     icon: <IconTicket />,
     title: "Action Workflows",
-    description: "Turn any signal into a ticket with configurable approvals, execute fixes via provider connectors, and audit every step end-to-end.",
+    description:
+      "Turn any signal into a ticket with configurable approvals, execute fixes via provider connectors, and audit every step end-to-end.",
   },
   {
     icon: <IconNotification />,
     title: "Alerts & Reporting",
-    description: "Real-time notifications (email, push, webhook), budget threshold alerts, and periodic PDF/CSV reports with savings KPIs.",
+    description:
+      "Real-time notifications (email, push, webhook), budget threshold alerts, and periodic PDF/CSV reports with savings KPIs.",
   },
 ];
 
@@ -132,22 +252,26 @@ const howItWorks = [
   {
     step: "01",
     title: "Connect Your Clouds",
-    description: "Plug in your AWS, Azure, or GCP accounts with secure read-only connectors. SamOps normalizes billing, usage, and performance metrics into a unified model.",
+    description:
+      "Plug in your AWS, Azure, or GCP accounts with secure read-only connectors. SamOps normalizes billing, usage, and performance metrics into a unified model.",
   },
   {
     step: "02",
     title: "Detect & Analyze",
-    description: "Our ML pipeline continuously scans for anomalies — spikes, drifts, and budget exceedances — and generates scored, explainable findings.",
+    description:
+      "Our ML pipeline continuously scans for anomalies — spikes, drifts, and budget exceedances — and generates scored, explainable findings.",
   },
   {
     step: "03",
     title: "Recommend & Prioritize",
-    description: "Optimization recommendations are ranked by savings potential, risk, and confidence — rightsizing, scheduling, commitments, storage lifecycle, and more.",
+    description:
+      "Optimization recommendations are ranked by savings potential, risk, and confidence — rightsizing, scheduling, commitments, storage lifecycle, and more.",
   },
   {
     step: "04",
     title: "Fix & Automate",
-    description: "One-click actions or automated workflows execute fixes, create ITSM tickets, and when the root cause is in code — the AI Agent opens a pull request.",
+    description:
+      "One-click actions or automated workflows execute fixes, create ITSM tickets, and when the root cause is in code — the AI Agent opens a pull request.",
   },
 ];
 
@@ -159,9 +283,24 @@ const stats = [
 ];
 
 const platformCapabilities = [
-  { icon: <IconCloud />, title: "Multi-Cloud Connectors", description: "Extensible adapter pattern for any cloud provider billing and metrics API." },
-  { icon: <IconShield />, title: "Governance & Compliance", description: "Budgets, policies, role-based access, and full audit trail for every action." },
-  { icon: <IconChart />, title: "FinOps Analytics", description: "Cost breakdowns by service, tag, project, team — with trend analysis and forecasting." },
+  {
+    icon: <IconCloud />,
+    title: "Multi-Cloud Connectors",
+    description:
+      "Extensible adapter pattern for any cloud provider billing and metrics API.",
+  },
+  {
+    icon: <IconShield />,
+    title: "Governance & Compliance",
+    description:
+      "Budgets, policies, role-based access, and full audit trail for every action.",
+  },
+  {
+    icon: <IconChart />,
+    title: "FinOps Analytics",
+    description:
+      "Cost breakdowns by service, tag, project, team — with trend analysis and forecasting.",
+  },
 ];
 
 const pricingTiers = [
@@ -169,7 +308,13 @@ const pricingTiers = [
     name: "Starter",
     price: "Free",
     description: "For small teams getting started with cloud cost visibility.",
-    features: ["1 cloud account", "Cost dashboard", "Basic anomaly alerts", "Weekly email reports", "Community support"],
+    features: [
+      "1 cloud account",
+      "Cost dashboard",
+      "Basic anomaly alerts",
+      "Weekly email reports",
+      "Community support",
+    ],
     cta: "Get Started",
     highlighted: false,
   },
@@ -178,15 +323,30 @@ const pricingTiers = [
     price: "$499",
     period: "/mo",
     description: "For growing teams that need optimization and automation.",
-    features: ["Unlimited cloud accounts", "ML anomaly detection", "Smart recommendations", "Action workflows & approvals", "Slack / Teams integration", "Priority support"],
+    features: [
+      "Unlimited cloud accounts",
+      "ML anomaly detection",
+      "Smart recommendations",
+      "Action workflows & approvals",
+      "Slack / Teams integration",
+      "Priority support",
+    ],
     cta: "Start Free Trial",
     highlighted: true,
   },
   {
     name: "Enterprise",
     price: "Custom",
-    description: "For organizations requiring full governance and AI code analysis.",
-    features: ["Everything in Pro", "AI Code Analysis Agent", "Auto PR generation", "SSO / SCIM", "Custom SLA", "Dedicated success manager"],
+    description:
+      "For organizations requiring full governance and AI code analysis.",
+    features: [
+      "Everything in Pro",
+      "AI Code Analysis Agent",
+      "Auto PR generation",
+      "SSO / SCIM",
+      "Custom SLA",
+      "Dedicated success manager",
+    ],
     cta: "Contact Sales",
     highlighted: false,
   },
@@ -219,9 +379,10 @@ export default function LandingPage() {
                 <span className="gradient-text">Start Optimizing.</span>
               </h1>
               <p className="text-lg sm:text-xl text-[#a0aec0] max-w-3xl mx-auto leading-relaxed">
-                SamOps centralizes cloud cost visibility, detects anomalies in real time,
-                generates optimization recommendations, and automates remediation — all the way
-                from billing data to a code-level pull request.
+                SamOps centralizes cloud cost visibility, detects anomalies in
+                real time, generates optimization recommendations, and automates
+                remediation — all the way from billing data to a code-level pull
+                request.
               </p>
             </div>
 
@@ -264,15 +425,44 @@ export default function LandingPage() {
                     {/* Top stats row */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       {[
-                        { label: "Monthly Spend", value: "$24,830", change: "-12%", positive: true },
-                        { label: "Active Anomalies", value: "3", change: "+1", positive: false },
-                        { label: "Open Recommendations", value: "17", change: "new", positive: true },
-                        { label: "Savings This Quarter", value: "$18.2k", change: "+34%", positive: true },
+                        {
+                          label: "Monthly Spend",
+                          value: "$24,830",
+                          change: "-12%",
+                          positive: true,
+                        },
+                        {
+                          label: "Active Anomalies",
+                          value: "3",
+                          change: "+1",
+                          positive: false,
+                        },
+                        {
+                          label: "Open Recommendations",
+                          value: "17",
+                          change: "new",
+                          positive: true,
+                        },
+                        {
+                          label: "Savings This Quarter",
+                          value: "$18.2k",
+                          change: "+34%",
+                          positive: true,
+                        },
                       ].map((stat, i) => (
-                        <div key={i} className="bg-[#14161c] rounded-lg p-4 border border-[#2b2f3a]/60">
-                          <p className="text-xs text-[#6b707c] mb-1">{stat.label}</p>
-                          <p className="text-xl font-bold text-white">{stat.value}</p>
-                          <span className={`text-xs ${stat.positive ? "text-green-400" : "text-red-400"}`}>
+                        <div
+                          key={i}
+                          className="bg-[#14161c] rounded-lg p-4 border border-[#2b2f3a]/60"
+                        >
+                          <p className="text-xs text-[#6b707c] mb-1">
+                            {stat.label}
+                          </p>
+                          <p className="text-xl font-bold text-white">
+                            {stat.value}
+                          </p>
+                          <span
+                            className={`text-xs ${stat.positive ? "text-green-400" : "text-red-400"}`}
+                          >
                             {stat.change}
                           </span>
                         </div>
@@ -280,19 +470,25 @@ export default function LandingPage() {
                     </div>
                     {/* Chart area placeholder */}
                     <div className="bg-[#14161c] rounded-lg p-6 border border-[#2b2f3a]/60 h-48 flex items-end justify-between gap-2">
-                      {[40, 55, 35, 65, 50, 75, 60, 80, 45, 70, 55, 85].map((h, i) => (
-                        <div key={i} className="flex-1 flex flex-col items-center gap-1">
+                      {[40, 55, 35, 65, 50, 75, 60, 80, 45, 70, 55, 85].map(
+                        (h, i) => (
                           <div
-                            className="w-full rounded-t-sm transition-all duration-500"
-                            style={{
-                              height: `${h}%`,
-                              background: h > 70
-                                ? "linear-gradient(to top, #d46a3a, #e07844)"
-                                : "linear-gradient(to top, #2b2f3a, #3a3f4b)",
-                            }}
-                          />
-                        </div>
-                      ))}
+                            key={i}
+                            className="flex-1 flex flex-col items-center gap-1"
+                          >
+                            <div
+                              className="w-full rounded-t-sm transition-all duration-500"
+                              style={{
+                                height: `${h}%`,
+                                background:
+                                  h > 70
+                                    ? "linear-gradient(to top, #d46a3a, #e07844)"
+                                    : "linear-gradient(to top, #2b2f3a, #3a3f4b)",
+                              }}
+                            />
+                          </div>
+                        ),
+                      )}
                     </div>
                   </div>
                 </div>
@@ -300,7 +496,10 @@ export default function LandingPage() {
               {/* Glow effect behind */}
               <div
                 className="absolute inset-0 -z-10 blur-3xl opacity-20"
-                style={{ background: "radial-gradient(ellipse at center, #d46a3a 0%, transparent 70%)" }}
+                style={{
+                  background:
+                    "radial-gradient(ellipse at center, #d46a3a 0%, transparent 70%)",
+                }}
               />
             </div>
           </div>
@@ -311,7 +510,9 @@ export default function LandingPage() {
           <div className="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {stats.map((s, i) => (
               <div key={i} className="space-y-2">
-                <p className="text-3xl sm:text-4xl font-bold gradient-text">{s.value}</p>
+                <p className="text-3xl sm:text-4xl font-bold gradient-text">
+                  {s.value}
+                </p>
                 <p className="text-sm text-[#a0aec0]">{s.label}</p>
               </div>
             ))}
@@ -323,12 +524,16 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             {/* Section header */}
             <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">Features</span>
+              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">
+                Features
+              </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Everything you need to <span className="gradient-text">master cloud costs</span>
+                Everything you need to{" "}
+                <span className="gradient-text">master cloud costs</span>
               </h2>
               <p className="text-[#a0aec0] leading-relaxed">
-                From real-time visibility to automated code fixes — SamOps covers the entire FinOps lifecycle.
+                From real-time visibility to automated code fixes — SamOps
+                covers the entire FinOps lifecycle.
               </p>
             </div>
 
@@ -342,8 +547,12 @@ export default function LandingPage() {
                   <div className="w-12 h-12 rounded-xl bg-[#d46a3a]/10 text-[#d46a3a] flex items-center justify-center mb-4 group-hover:bg-[#d46a3a]/20 transition-colors">
                     {f.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{f.title}</h3>
-                  <p className="text-sm text-[#a0aec0] leading-relaxed">{f.description}</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {f.title}
+                  </h3>
+                  <p className="text-sm text-[#a0aec0] leading-relaxed">
+                    {f.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -351,12 +560,18 @@ export default function LandingPage() {
         </section>
 
         {/* ═══════════════════════ HOW IT WORKS ═══════════════════════ */}
-        <section id="how-it-works" className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40">
+        <section
+          id="how-it-works"
+          className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40"
+        >
           <div className="max-w-5xl mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">How It Works</span>
+              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">
+                How It Works
+              </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Four steps from <span className="gradient-text">chaos to control</span>
+                Four steps from{" "}
+                <span className="gradient-text">chaos to control</span>
               </h2>
             </div>
 
@@ -371,8 +586,12 @@ export default function LandingPage() {
                     {item.step}
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-white mb-2">{item.title}</h3>
-                    <p className="text-[#a0aec0] leading-relaxed">{item.description}</p>
+                    <h3 className="text-xl font-semibold text-white mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#a0aec0] leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -381,15 +600,22 @@ export default function LandingPage() {
         </section>
 
         {/* ═══════════════════════ PLATFORM ═══════════════════════ */}
-        <section id="platform" className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40">
+        <section
+          id="platform"
+          className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40"
+        >
           <div className="max-w-6xl mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">Platform</span>
+              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">
+                Platform
+              </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Built for <span className="gradient-text">enterprise FinOps</span>
+                Built for{" "}
+                <span className="gradient-text">enterprise FinOps</span>
               </h2>
               <p className="text-[#a0aec0] leading-relaxed">
-                Multi-cloud, multi-team, and fully auditable — with the security and governance your organization demands.
+                Multi-cloud, multi-team, and fully auditable — with the security
+                and governance your organization demands.
               </p>
             </div>
 
@@ -402,21 +628,36 @@ export default function LandingPage() {
                   <div className="w-14 h-14 rounded-full bg-[#d46a3a]/10 text-[#d46a3a] flex items-center justify-center mx-auto mb-4">
                     {cap.icon}
                   </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">{cap.title}</h3>
-                  <p className="text-sm text-[#a0aec0] leading-relaxed">{cap.description}</p>
+                  <h3 className="text-lg font-semibold text-white mb-2">
+                    {cap.title}
+                  </h3>
+                  <p className="text-sm text-[#a0aec0] leading-relaxed">
+                    {cap.description}
+                  </p>
                 </div>
               ))}
             </div>
 
             {/* Tech stack */}
             <div className="glass-strong rounded-2xl p-8 sm:p-10">
-              <h3 className="text-lg font-semibold text-white mb-6 text-center">Technology Stack</h3>
+              <h3 className="text-lg font-semibold text-white mb-6 text-center">
+                Technology Stack
+              </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-center">
                 {[
-                  "Next.js", "Flutter", "PostgreSQL (Supabase)", "Python ML",
-                  "REST / GraphQL", "Prometheus", "Grafana", "LLM Agents",
+                  "Next.js",
+                  "Flutter",
+                  "PostgreSQL (Supabase)",
+                  "Python ML",
+                  "REST / GraphQL",
+                  "Prometheus",
+                  "Grafana",
+                  "LLM Agents",
                 ].map((tech) => (
-                  <div key={tech} className="px-4 py-3 rounded-xl bg-[#14161c] border border-[#2b2f3a]/60 text-sm text-[#a0aec0]">
+                  <div
+                    key={tech}
+                    className="px-4 py-3 rounded-xl bg-[#14161c] border border-[#2b2f3a]/60 text-sm text-[#a0aec0]"
+                  >
                     {tech}
                   </div>
                 ))}
@@ -426,15 +667,22 @@ export default function LandingPage() {
         </section>
 
         {/* ═══════════════════════ PRICING ═══════════════════════ */}
-        <section id="pricing" className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40">
+        <section
+          id="pricing"
+          className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40"
+        >
           <div className="max-w-5xl mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-16 space-y-4">
-              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">Pricing</span>
+              <span className="text-sm font-medium text-[#d46a3a] uppercase tracking-wider">
+                Pricing
+              </span>
               <h2 className="text-3xl sm:text-4xl font-bold text-white">
-                Simple, <span className="gradient-text">transparent pricing</span>
+                Simple,{" "}
+                <span className="gradient-text">transparent pricing</span>
               </h2>
               <p className="text-[#a0aec0] leading-relaxed">
-                Start free. Scale as you grow. Pay only for what your team needs.
+                Start free. Scale as you grow. Pay only for what your team
+                needs.
               </p>
             </div>
 
@@ -456,16 +704,27 @@ export default function LandingPage() {
                     </div>
                   )}
                   <div className="mb-6">
-                    <h3 className="text-lg font-semibold text-white">{tier.name}</h3>
+                    <h3 className="text-lg font-semibold text-white">
+                      {tier.name}
+                    </h3>
                     <div className="mt-3 flex items-baseline gap-1">
-                      <span className="text-4xl font-bold text-white">{tier.price}</span>
-                      {tier.period && <span className="text-[#6b707c]">{tier.period}</span>}
+                      <span className="text-4xl font-bold text-white">
+                        {tier.price}
+                      </span>
+                      {tier.period && (
+                        <span className="text-[#6b707c]">{tier.period}</span>
+                      )}
                     </div>
-                    <p className="mt-2 text-sm text-[#a0aec0]">{tier.description}</p>
+                    <p className="mt-2 text-sm text-[#a0aec0]">
+                      {tier.description}
+                    </p>
                   </div>
                   <ul className="space-y-3 mb-8">
                     {tier.features.map((feat) => (
-                      <li key={feat} className="flex items-start gap-2 text-sm text-[#a0aec0]">
+                      <li
+                        key={feat}
+                        className="flex items-start gap-2 text-sm text-[#a0aec0]"
+                      >
                         <IconCheck />
                         <span>{feat}</span>
                       </li>
@@ -488,16 +747,21 @@ export default function LandingPage() {
         </section>
 
         {/* ═══════════════════════ CTA / WAITLIST ═══════════════════════ */}
-        <section id="waitlist" className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40">
+        <section
+          id="waitlist"
+          className="py-24 sm:py-32 px-4 border-t border-[#2b2f3a]/40"
+        >
           <div className="max-w-3xl mx-auto text-center space-y-8">
             <div className="space-y-2">
               <LogoIcon className="h-16 w-16 mx-auto animate-float" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white">
-              Ready to take control of your <span className="gradient-text">cloud spend</span>?
+              Ready to take control of your{" "}
+              <span className="gradient-text">cloud spend</span>?
             </h2>
             <p className="text-lg text-[#a0aec0] max-w-xl mx-auto leading-relaxed">
-              Join the waitlist and be the first to experience the future of FinOps — from anomaly detection to automated code fixes.
+              Join the waitlist and be the first to experience the future of
+              FinOps — from anomaly detection to automated code fixes.
             </p>
             <div className="pt-4">
               <EmailForm />

@@ -10,12 +10,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "SamOps - Cloud FinOps Intelligence Platform",
-  description: "SamOps centralizes cloud cost visibility, detects anomalies, generates optimization recommendations, and automates remediation — from billing data to pull request.",
-  keywords: ["SamOps", "FinOps", "Cloud Cost Optimization", "Anomaly Detection", "Cloud Operations", "Cost Management", "Rightsizing", "AI Code Analysis"],
+  description:
+    "SamOps centralizes cloud cost visibility, detects anomalies, generates optimization recommendations, and automates remediation — from billing data to pull request.",
+  keywords: [
+    "SamOps",
+    "FinOps",
+    "Cloud Cost Optimization",
+    "Anomaly Detection",
+    "Cloud Operations",
+    "Cost Management",
+    "Rightsizing",
+    "AI Code Analysis",
+  ],
   authors: [{ name: "SamOps Team" }],
   openGraph: {
     title: "SamOps - Cloud FinOps Intelligence Platform",
-    description: "Real-time cloud cost visibility. AI-powered anomaly detection. Automated optimization — all the way to code-level fixes.",
+    description:
+      "Real-time cloud cost visibility. AI-powered anomaly detection. Automated optimization — all the way to code-level fixes.",
     type: "website",
   },
 };
@@ -27,9 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} antialiased`}>
-        {children}
-      </body>
+      <body className={`${inter.variable} antialiased`}>{children}</body>
     </html>
   );
 }
