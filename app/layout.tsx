@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SamOps - Coming Soon",
-  description: "SamOps transforms complex system data into actionable intelligence. Coming soon - join the waitlist!",
-  keywords: ["SamOps", "FinOps", "Cloud Operations", "Monitoring", "Cost Optimization"],
+  title: "SamOps - Cloud FinOps Intelligence Platform",
+  description: "SamOps centralizes cloud cost visibility, detects anomalies, generates optimization recommendations, and automates remediation — from billing data to pull request.",
+  keywords: ["SamOps", "FinOps", "Cloud Cost Optimization", "Anomaly Detection", "Cloud Operations", "Cost Management", "Rightsizing", "AI Code Analysis"],
   authors: [{ name: "SamOps Team" }],
   openGraph: {
-    title: "SamOps - Coming Soon",
-    description: "Turn System Complexity into Actionable Intelligence",
+    title: "SamOps - Cloud FinOps Intelligence Platform",
+    description: "Real-time cloud cost visibility. AI-powered anomaly detection. Automated optimization — all the way to code-level fixes.",
     type: "website",
   },
 };
