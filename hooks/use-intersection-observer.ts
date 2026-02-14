@@ -12,10 +12,10 @@ export function useIntersectionObserver({
   rootMargin = "0px",
   freezeOnceVisible = false,
 }: UseIntersectionObserverOptions = {}): [
-  React.RefObject<HTMLDivElement>,
+  React.RefObject<HTMLDivElement | null>,
   boolean
 ] {
-  const elementRef = useRef<HTMLDivElement>(null);
+  const elementRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

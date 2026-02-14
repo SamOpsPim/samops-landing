@@ -31,7 +31,40 @@ export const metadata: Metadata = {
     description:
       "Real-time cloud cost visibility. AI-powered anomaly detection. Automated optimization — all the way to code-level fixes.",
     type: "website",
+    siteName: "SamOps",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "SamOps - Cloud FinOps Intelligence Platform",
+    description:
+      "Real-time cloud cost visibility. AI-powered anomaly detection. Automated optimization — all the way to code-level fixes.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    // Add your verification tokens here when available
+    // google: 'your-google-verification-token',
+  },
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  themeColor: [
+    { media: '(prefers-color-scheme: dark)', color: '#02040a' },
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+  ],
 };
 
 export default function RootLayout({
