@@ -1,13 +1,59 @@
 "use client";
 
-import { useState, FormEvent } from "react";
+import { useState, FormEvent, useCallback, memo, useTransition } from "react";
+
+const LoadingSpinner = memo(() => (
+  <svg
+    className="animate-spin h-5 w-5"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <circle
+      className="opacity-25"
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="currentColor"
+      strokeWidth="4"
+    />
+    <path
+      className="opacity-75"
+      fill="currentColor"
+      d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+    />
+  </svg>
+));
+
+LoadingSpinner.displayName = "LoadingSpinner";
+
+const CheckIcon = memo(() => (
+  <svg
+    className="h-5 w-5"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={2}
+      d="M5 13l4 4L19 7"
+    />
+  </svg>
+));
+
+CheckIcon.displayName = "CheckIcon";
 
 export function EmailForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const [isPending, startTransition] = useTransition();
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = useCallback(async (e: FormEvent) => {
     e.preventDefault();
     
     if (!email || !email.includes("@")) {
@@ -21,16 +67,22 @@ export function EmailForm() {
     // Simulate API call - replace with actual endpoint
     await new Promise((resolve) => setTimeout(resolve, 1500));
     
-    setStatus("success");
-    setMessage("Thanks for joining! We'll notify you when we launch.");
-    setEmail("");
-    
-    // Reset after 5 seconds
-    setTimeout(() => {
-      setStatus("idle");
-      setMessage("");
-    }, 5000);
-  };
+    startTransition(() => {
+      setStatus("success");
+      setMessage("Thanks for joining! We'll notify you when we launch.");
+      setEmail("");
+      
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setStatus("idle");
+        setMessage("");
+      }, 5000);
+    });
+  }, [email]);
+
+  const handleEmailChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  }, []);
 
   return (
     <div className="w-full max-w-md mx-auto">
@@ -40,10 +92,11 @@ export function EmailForm() {
             <input
               type="email"
               value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleEmailChange}
               placeholder="Enter your email"
               disabled={status === "loading" || status === "success"}
               className="w-full px-5 py-4 bg-[#14161c] border border-[#4a4f5c] rounded-xl text-white placeholder:text-[#6b707c] focus:border-[#d46a3a] focus:ring-2 focus:ring-[#d46a3a]/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label="Email address"
             />
           </div>
           <button
@@ -73,6 +126,7 @@ export function EmailForm() {
           className={`mt-4 text-sm text-center animate-fade-in-up ${
             status === "error" ? "text-red-400" : "text-green-400"
           }`}
+          role="alert"
         >
           {message}
         </p>
@@ -82,48 +136,5 @@ export function EmailForm() {
         No spam, ever. Unsubscribe anytime.
       </p>
     </div>
-  );
-}
-
-function LoadingSpinner() {
-  return (
-    <svg
-      className="animate-spin h-5 w-5"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-    >
-      <circle
-        className="opacity-25"
-        cx="12"
-        cy="12"
-        r="10"
-        stroke="currentColor"
-        strokeWidth="4"
-      />
-      <path
-        className="opacity-75"
-        fill="currentColor"
-        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-      />
-    </svg>
-  );
-}
-
-function CheckIcon() {
-  return (
-    <svg
-      className="h-5 w-5"
-      fill="none"
-      stroke="currentColor"
-      viewBox="0 0 24 24"
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth={2}
-        d="M5 13l4 4L19 7"
-      />
-    </svg>
   );
 }
