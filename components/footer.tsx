@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { memo } from "react";
 import { LogoIcon } from "./logo";
 
 const socialLinks = [
@@ -31,7 +32,10 @@ const socialLinks = [
   },
 ];
 
-export function Footer() {
+const SocialIcon = memo(({ icon, name }: { icon: React.ReactNode; name: string }) => icon);
+SocialIcon.displayName = "SocialIcon";
+
+export const Footer = memo(function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -72,4 +76,4 @@ export function Footer() {
       </div>
     </footer>
   );
-}
+});

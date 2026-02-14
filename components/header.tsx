@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import { Logo } from "./logo";
 
 const navLinks = [
@@ -11,8 +11,44 @@ const navLinks = [
   { label: "Pricing", href: "#pricing" },
 ];
 
+const MobileMenuIcon = memo(({ isOpen }: { isOpen: boolean }) => (
+  <svg
+    className="w-6 h-6"
+    fill="none"
+    stroke="currentColor"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    {isOpen ? (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M6 18L18 6M6 6l12 12"
+      />
+    ) : (
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4 6h16M4 12h16M4 18h16"
+      />
+    )}
+  </svg>
+));
+
+MobileMenuIcon.displayName = "MobileMenuIcon";
+
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  
+  const toggleMobile = useCallback(() => {
+    setMobileOpen(prev => !prev);
+  }, []);
+  
+  const closeMobile = useCallback(() => {
+    setMobileOpen(false);
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 px-4 py-4">
@@ -48,32 +84,11 @@ export function Header() {
 
         {/* Mobile hamburger */}
         <button
-          onClick={() => setMobileOpen(!mobileOpen)}
+          onClick={toggleMobile}
           className="md:hidden p-2 text-[#a0aec0] hover:text-white"
           aria-label="Toggle menu"
         >
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            {mobileOpen ? (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            ) : (
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            )}
-          </svg>
+          <MobileMenuIcon isOpen={mobileOpen} />
         </button>
       </nav>
 
@@ -85,7 +100,7 @@ export function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMobile}
                 className="text-sm text-[#a0aec0] hover:text-white transition-colors"
               >
                 {link.label}
@@ -93,7 +108,7 @@ export function Header() {
             ))}
             <a
               href="#waitlist"
-              onClick={() => setMobileOpen(false)}
+              onClick={closeMobile}
               className="px-5 py-2.5 text-sm font-semibold text-white bg-[#d46a3a] hover:bg-[#e07844] rounded-xl text-center transition-all"
             >
               Join Waitlist
